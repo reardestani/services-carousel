@@ -90,6 +90,7 @@ final class Plugin {
             'assets/assets.php',
             'ajax/ajax.php',
             'post-types/post-types.php',
+            'taxonomies/taxonomies.php',
         ];
 
         foreach ( $modules as $module ) {

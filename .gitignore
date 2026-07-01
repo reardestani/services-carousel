@@ -3,5 +3,5 @@ node_modules
 dist
 backup
 vendor
-services-carousel
+/services-carousel/
 services-carousel.zip

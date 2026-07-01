@@ -1,0 +1,27 @@
+# Copyright (C) 2026 Services Carousel
+# This file is distributed under the same license as the Services Carousel package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Services Carousel\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-01 14:39+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../includes/modules/ajax/ajax.php:40
+msgid "Missing module or method."
+msgstr ""
+
+#: ../includes/modules/ajax/ajax.php:49
+msgid "Unknown module: %s"
+msgstr ""
+
+#: ../includes/modules/ajax/ajax.php:60
+msgid "Module %s does not support AJAX."
+msgstr ""

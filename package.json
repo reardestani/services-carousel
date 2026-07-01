@@ -1,0 +1,76 @@
+{
+    "name": "services-carousel",
+    "version": "1.0.0",
+    "postcss": {
+        "plugins": {
+            "postcss-import": {},
+            "postcss-nested": {},
+            "autoprefixer": {}
+        }
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@wordpress/babel-preset-default"
+        ],
+        "plugins": []
+    },
+    "watch": {
+        "build:css": {
+            "patterns": [
+                "assets/src/css"
+            ],
+            "extensions": [
+                "css"
+            ]
+        },
+        "build:js": {
+            "patterns": [
+                "assets/src/js"
+            ],
+            "extensions": [
+                "js"
+            ]
+        }
+    },
+    "scripts": {
+        "clean": "rimraf assets/dist services-carousel services-carousel.zip",
+        "pot": "wp-pot --domain 'services-carousel' --package 'Services Carousel' --dest-file 'languages/services-carousel.pot' --src '**/*.php'",
+        "build:css": "postcss assets/src/css/**/[!_]*.css --dir assets/dist/css",
+        "build:css:min": "node scripts/minify-css.js",
+        "build:js": "babel assets/src/js/**/[!_]*.js -d assets/dist/js",
+        "build:js:min": "node scripts/minify-js.js",
+        "build:blocks": "wp-scripts build --blocks-manifest --source-path=includes/modules/blocks/src --output-path=includes/modules/blocks/dist",
+        "build:blocks:start": "wp-scripts start --blocks-manifest --source-path=includes/modules/blocks/src --output-path=includes/modules/blocks/dist",
+        "build": "npm run clean && npm run build:css && npm run build:js && npm run build:css:min && npm run build:js:min && npm run build:blocks",
+        "watch": "npm-watch",
+        "copy": "copyfiles 'languages/*' 'assets/dist/**/*' 'assets/lib/**/*' 'includes/**/*' 'vendor/**/*' services-carousel.php readme.txt services-carousel",
+        "zip": "zip-build --build-dir 'services-carousel' --zip-dir '.' --template '%NAME%.%EXT%'",
+        "release": "npm run build && npm run pot && npm run copy"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.10",
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@wordpress/babel-preset-default": "^8.48.1",
+        "@wordpress/block-editor": "^15.21.1",
+        "@wordpress/blocks": "^15.21.1",
+        "@wordpress/components": "^35.0.1",
+        "@wordpress/core-data": "^7.48.1",
+        "@wordpress/element": "^8.0.1",
+        "@wordpress/i18n": "^6.21.1",
+        "@wordpress/scripts": "^32.4.1",
+        "autoprefixer": "^10.1.0",
+        "copyfiles": "^2.4.1",
+        "csso-cli": "^4.0.2",
+        "npm-watch": "^0.13.0",
+        "postcss": "^8.2.4",
+        "postcss-cli": "^11.0.1",
+        "postcss-import": "^16.1.1",
+        "postcss-nested": "^7.0.2",
+        "rimraf": "^6.1.3",
+        "terser": "^5.48.0",
+        "wp-pot-cli": "^1.5.0",
+        "zip-build": "^1.4.0"
+    }
+}

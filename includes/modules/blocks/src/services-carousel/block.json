@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "services-carousel/services-carousel",
+    "title": "Services Carousel",
+    "icon": "columns",
+    "description": "Show services as a carousel.",
+    "keywords": ["services", "carousel"],
+    "attributes": {},
+    "supports": {},
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}

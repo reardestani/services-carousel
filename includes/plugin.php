@@ -92,6 +92,7 @@ final class Plugin {
             'post-types/post-types.php',
             'taxonomies/taxonomies.php',
             'meta-boxes/meta-boxes.php',
+            'blocks/blocks.php',
         ];
 
         foreach ( $modules as $module ) {

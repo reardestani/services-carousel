@@ -89,6 +89,7 @@ final class Plugin {
         $modules = [
             'assets/assets.php',
             'ajax/ajax.php',
+            'post-types/post-types.php',
         ];
 
         foreach ( $modules as $module ) {

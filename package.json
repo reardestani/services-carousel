@@ -57,6 +57,7 @@
         "@wordpress/blocks": "^15.21.1",
         "@wordpress/components": "^35.0.1",
         "@wordpress/core-data": "^7.48.1",
+        "@wordpress/data": "^10.50.0",
         "@wordpress/element": "^8.0.1",
         "@wordpress/i18n": "^6.21.1",
         "@wordpress/scripts": "^32.4.1",

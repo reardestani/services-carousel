@@ -5,10 +5,31 @@
     "title": "Services Carousel",
     "icon": "columns",
     "description": "Show services as a carousel.",
-    "keywords": ["services", "carousel"],
-    "attributes": {},
+    "keywords": [ "services", "carousel" ],
+    "attributes": {
+        "postsPerPage": {
+            "type": "integer",
+            "default": 5
+        },
+        "displayOrder": {
+            "type": "string",
+            "default": "DESC"
+        },
+        "categories": {
+            "type": "array"
+        },
+        "minPrice": {
+            "type": "integer",
+            "default": 0
+        },
+        "maxPrice": {
+            "type": "integer"
+        }
+    },
     "supports": {},
     "editorScript": "file:./index.js",
     "editorStyle": "file:./index.css",
-    "style": "file:./style-index.css"
+    "style": [ "file:./style-index.css" , "svcl-swiper" ],
+    "viewScript": [ "file:./view.js", "svcl-swiper" ],
+    "render": "file:./render.php"
 }

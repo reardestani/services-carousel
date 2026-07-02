@@ -30,8 +30,22 @@ final class Assets {
      */
     protected function get_assets() {
         $assets = [
-            'styles' => [],
-            'scripts' => [],
+            'styles' => [
+                'svcl-swiper' => [
+                    'src'       => SVCL_ASSETS_URL . 'lib/swiper/swiper.css',
+                    'deps'      => [],
+                    'version'   => '12.2.0',
+                    'media'     => 'all',
+                ],
+            ],
+            'scripts' => [
+                'svcl-swiper' => [
+                    'src'       => SVCL_ASSETS_URL . 'lib/swiper/swiper.js',
+                    'deps'      => [],
+                    'version'   => '12.2.0',
+                    'in_footer' => true,
+                ],
+            ],
         ];
 
         return $assets;

@@ -5,12 +5,12 @@ defined( 'ABSPATH' ) || exit;
 $services_query_args = [
     'post_type' => 'svcl_service',
     'orderby'   => 'date',
-    'order'     => $attributes['displayOrder'],
+    'order'     => sanitize_key( $attributes['displayOrder'] ),
 ];
 
 // Sets posts per page.
 if ( ! empty( $attributes['postsPerPage'] ) ) {
-    $services_query_args['posts_per_page'] = $attributes['postsPerPage'];
+    $services_query_args['posts_per_page'] = (int) $attributes['postsPerPage'];
 }
 
 // Filters by services categories.
@@ -22,7 +22,7 @@ if (
         [
             'taxonomy' => 'svcl_service_category',
             'field'    => 'term_id',
-            'terms'    => $attributes['categories'],
+            'terms'    => (array) $attributes['categories'],
         ],
     ];
 }
@@ -34,9 +34,9 @@ if (
 ) {
     $services_query_args['meta_query'] = [
         [
-            'key' => '_svcl_service_price',
-            'value' => [ $attributes['minPrice'], $attributes['maxPrice'] ],
-            'type' => 'numeric',
+            'key'     => '_svcl_service_price',
+            'value'   => [ absint( $attributes['minPrice'] ), absint( $attributes['maxPrice'] ) ],
+            'type'    => 'numeric',
             'compare' => 'BETWEEN',
         ],
     ];
@@ -66,5 +66,4 @@ $services_query = new WP_Query( $services_query_args );
             <?php esc_html_e( 'Sorry, no services matched your criteria.', 'services-carousel' ); ?>
         <?php endif; wp_reset_postdata(); ?>
     </div>
-
 </div>

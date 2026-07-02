@@ -34,7 +34,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
             categoriesOptions.push( { value : category.id, label : category.name } )
         })
     } else {
-        categoriesOptions.push( { value: 0, label: 'Loading...' } )
+        categoriesOptions.push( { value: 0, label: __( 'Loading...', 'services-carousel' ) } )
     }
 
     function onChangeServicesNumber( newContent ) {
@@ -50,11 +50,11 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
     }
 
     function onChangeMinPrice( newValue ) {
-        setAttributes( { minPrice: newValue } );
+        setAttributes( { minPrice: newValue === '' ? undefined : Number( newValue ) } );
     }
 
     function onChangeMaxPrice( newValue ) {
-        setAttributes( { maxPrice: newValue } );
+        setAttributes( { maxPrice: newValue === '' ? undefined : Number( newValue ) } );
     }
 
     return (

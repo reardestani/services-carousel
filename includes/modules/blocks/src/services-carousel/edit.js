@@ -12,9 +12,7 @@ import {
 import './editor.scss';
 
 export default function Edit( { attributes, setAttributes, clientId } ) {
-    const blockProps = useBlockProps( {
-        className: `svcl-container`
-    } );
+    const blockProps = useBlockProps();
 
     const {
         postsPerPage,
@@ -62,41 +60,41 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
     return (
         <div { ...blockProps }>
             <InspectorControls>
-                <PanelBody title={ __( 'Settings' ) }>
+                <PanelBody title={ __( 'Settings', 'services-carousel' ) }>
                     <NumberControl
-                        label="Number of Services to Display"
+                        label={ __( 'Number of Services to Display', 'services-carousel' ) }
                         value={ postsPerPage }
                         min="-1"
                         onChange={ onChangeServicesNumber }
                     />
 
                     <SelectControl
-                        label="Display Order"
+                        label={ __( 'Display Order', 'services-carousel' ) }
                         value={ displayOrder }
                         options={ [
-                            { value: 'DESC', label: 'Newest' },
-                            { value: 'ASC', label: 'Oldest' },
+                            { value: 'DESC', label: __( 'Newest', 'services-carousel' ) },
+                            { value: 'ASC', label: __( 'Oldest', 'services-carousel' ) },
                         ] }
                         onChange={ onChangeDisplayOrder }
                     />
 
                     <SelectControl
                         multiple
-                        label="Filter by Service Category"
+                        label={ __( 'Filter by Service Category', 'services-carousel' ) }
                         value={ categories }
                         options={ categoriesOptions }
                         onChange={ onChangeCategories }
                     />
 
-                    <BaseControl label="Filter by Price">
+                    <BaseControl label={ __( 'Filter by Price', 'services-carousel' ) }>
                         <HStack spacing={ 2 }>
                             <NumberControl
-                                label="Minimum"
+                                label={ __( 'Minimum', 'services-carousel' ) }
                                 value={ minPrice }
                                 onChange={ onChangeMinPrice }
                             />
                             <NumberControl
-                                label="Maximum"
+                                label={ __( 'Maximum', 'services-carousel' ) }
                                 value={ maxPrice }
                                 onChange={ onChangeMaxPrice }
                             />

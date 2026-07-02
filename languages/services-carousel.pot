@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-01 14:39+0000\n"
+"POT-Creation-Date: 2026-07-02 17:28+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -24,4 +24,186 @@ msgstr ""
 
 #: ../includes/modules/ajax/ajax.php:60
 msgid "Module %s does not support AJAX."
+msgstr ""
+
+#: ../includes/modules/meta-boxes/service.php:38
+msgid "Service Settings"
+msgstr ""
+
+#: ../includes/modules/meta-boxes/service.php:61
+msgid "Price"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:36, ../includes/modules/post-types/service.php:57
+msgid "Services"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:37
+msgid "Service"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:38
+msgid "Add New"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:39
+msgid "Add New Service"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:40
+msgid "Edit Service"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:41
+msgid "New Service"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:42
+msgid "View Service"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:43
+msgid "View Services"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:44
+msgid "Search Services"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:45
+msgid "No portals found."
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:46
+msgid "No portals found in Trash."
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:47
+msgid "Parent Service:"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:48
+msgid "All Services"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:49
+msgid "Service Archives"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:50
+msgid "Service Attributes"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:51
+msgid "Insert into portal"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:52
+msgid "Uploaded to this portal"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:53
+msgid "Featured Image"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:54
+msgid "Set featured image"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:55
+msgid "Remove featured image"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:56
+msgid "Use as featured image"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:58
+msgid "Filter portals list"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:59
+msgid "Services list navigation"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:60
+msgid "Services list"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:61, ../includes/modules/post-types/service.php:68
+msgid "Service published."
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:62
+msgid "Service published privately."
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:63
+msgid "Service reverted to draft."
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:64
+msgid "Service scheduled."
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:65
+msgid "Service updated."
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:66
+msgid "Service Link"
+msgstr ""
+
+#: ../includes/modules/post-types/service.php:67
+msgid "A link to a portal."
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:33
+msgctxt "taxonomy general name"
+msgid "Service Categories"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:34
+msgctxt "taxonomy singular name"
+msgid "Service Category"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:35
+msgid "Search Service Categories"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:36
+msgid "All Service Categories"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:37
+msgid "Parent Service Category"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:38
+msgid "Parent Service Category:"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:39
+msgid "Edit Service Category"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:40
+msgid "Update Service Category"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:41
+msgid "Add New Service Category"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:42
+msgid "New Service Category Name"
+msgstr ""
+
+#: ../includes/modules/taxonomies/service.php:43
+msgid "Service Categories"
+msgstr ""
+
+#: ../includes/modules/blocks/dist/services-carousel/render.php:66, ../includes/modules/blocks/src/services-carousel/render.php:66
+msgid "Sorry, no services matched your criteria."
 msgstr ""
